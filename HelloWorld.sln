@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.Owin", "HelloWor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.WebService", "HelloWorld.WebService\HelloWorld.WebService.csproj", "{61B1EB45-2971-41BA-9710-5547A970B30E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.Web", "HelloWorld.Web\HelloWorld.Web.csproj", "{E36C3E29-407E-4909-83F3-A4AE456F259C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{61B1EB45-2971-41BA-9710-5547A970B30E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61B1EB45-2971-41BA-9710-5547A970B30E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61B1EB45-2971-41BA-9710-5547A970B30E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E36C3E29-407E-4909-83F3-A4AE456F259C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E36C3E29-407E-4909-83F3-A4AE456F259C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E36C3E29-407E-4909-83F3-A4AE456F259C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E36C3E29-407E-4909-83F3-A4AE456F259C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
