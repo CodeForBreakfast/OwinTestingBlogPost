@@ -1,9 +1,5 @@
-﻿using System;
-using System.Net.Http;
+﻿using System.Net.Http;
 
-using HelloWorld.Owin;
-
-using Microsoft.Owin.Builder;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HelloWorld.AcceptanceTests
@@ -11,22 +7,7 @@ namespace HelloWorld.AcceptanceTests
     [TestClass]
     public class FriendlyTests
     {
-        private readonly HttpClient client;
-
-        public FriendlyTests()
-        {
-            client = new HttpClient(CreateOwinHttpMessageHandler())
-            {
-                BaseAddress = new Uri("http://test")
-            };
-        }
-
-        private static OwinHttpMessageHandler CreateOwinHttpMessageHandler()
-        {
-            var app = new AppBuilder();
-            new Startup().Configuration(app);
-            return new OwinHttpMessageHandler(app.Build());
-        }
+        private readonly HttpClient client = ApiHelper.CreateTestClient();
 
         [TestMethod]
         public void HelloSaysHowdy()
